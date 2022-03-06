@@ -1,0 +1,430 @@
+body{
+    width:100%;
+    background-color: rgb(194, 206, 206);
+
+}
+
+/*styling of persecreption form section */
+.registerSec
+{
+    display:none;
+    position: absolute;
+    z-index:2;
+    width:100%;
+    height: 100%;
+}
+.formbutton
+{
+    padding:10px 10px;
+    font-weight: bold;
+    font-size: large;
+    transition: ease-out 0.4s;
+}
+#regHead
+{
+
+    display:flex;
+    direction: rtl;
+    width:100%;
+    margin-top:20px;
+    margin-top:30px;
+}
+.registerSec header, #persecreptViewSec header
+{
+    /*background: linear-gradient(0deg,rgb(70, 136, 116) 0%, rgb(138, 36, 36) 100%);    */
+    color:whitesmoke;
+    margin-top: -8px;
+    margin-left:-7px;
+    z-index:1;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:20px;
+    width:100%
+}
+
+.exit /* exit button : button that exit form form to   main Icons **/
+{
+    margin-left:70%;
+    margin-top:10px;
+    padding:10px 10px;
+    font-size:17px;
+    font-weight: bold;
+    width: 150px;
+    border-radius: 10%;
+    background-color: aqua;
+    transition: ease-out 0.4s;
+
+}
+.exit:hover
+{
+    color:maroon;
+    cursor: pointer;
+    box-shadow:inset 200px 0 0 0 #f9e506;
+}
+
+.handlinPerscreption  /* persecreption form styling**/
+{
+
+    width:60%;
+    margin:auto;
+    margin-top:75px;
+    margin-bottom: 20px;
+    background: rgb(136,203,171);
+    background: linear-gradient(0deg, rgb(105, 86, 117) 0%, rgba(0,13,60,1) 100%);    color:whitesmoke;
+    padding-bottom: 20px;
+    color:whitesmoke   
+}
+/**
+.midline
+{
+    margin:auto;
+    width:100%;
+    height:2px;
+    background-color: rgb(189, 178, 31);
+    margin-top: 20px;
+    background-color: rgb(189, 178, 31);
+
+}
+*/
+.handlinPerscreption input,textarea
+{
+    color:rgb(59, 12, 12);
+    font-weight: bold;
+    font-size: large; 
+}
+
+.handlinPerscreption textarea
+{
+    width:80%
+}
+
+
+/**
+.handlinPerscreption input[type="number"]
+{
+    width:50px;
+    min-width:30px;
+}
+.handlinPerscreption input[type="text"]
+{
+    max-width: 200px;
+    min-width:50px;
+}
+
+.line
+{
+    height:2px;
+    width:100%;
+    background-color: rgb(189, 178, 31);
+}
+**/
+
+#uploadImageButon
+{
+   max-width:150px; 
+   overflow: hidden;
+}
+.handlinPerscreption h2
+{
+    text-align: center;
+    margin-top:20px;
+}
+.handlinPerscreption section
+{
+    width:100%;
+}
+
+
+.diagnosis  /** styling  of sections within forms **/
+{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+/**
+.handlinPerscreption section label
+{
+    color:rgb(153, 197, 163);
+    font-weight: bold;
+    font-size:17px
+}
+
+
+.patientInfo , .examinations , .diagnosis ,.signature,.instructions /** styling  of sections within forms 
+{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.drugs h2, .instructions h2 ,.signature h2
+{
+    color: rgb(29, 88, 139);
+}
+      //** styling of patienInfo section childs
+.patientName
+{
+  flex-basis: 40%
+}
+.patientName input
+{
+    width:100%;
+}
+.patientName label
+{
+    width:30%
+}
+.patientAge
+{
+    flex-basis:15%
+}
+
+#patientAddective
+{
+    flex-basis: 40%;
+    max-height: 50px;
+    position: relative;
+}
+#patientAddective div
+{
+    border:solid black 2px;
+    width:70%;
+    max-height:50px;
+    text-align: center;
+    font-weight: bold;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-size: large;
+}
+#patientAddective nav
+{
+    display:none;
+    background: linear-gradient(0deg, rgb(136, 60, 119) 0%, rgba(0,13,60,1) 100%);    color:whitesmoke;
+    color:white;
+    font-weight: bold;
+    border:solid black 2px;
+    width:100px;
+    position: absolute;
+    z-index:0
+}
+#patientAddective nav ul
+{
+    list-style-type: none;
+    list-style-position:inside;
+    font-weight: bold;
+    padding:0px 0px;
+}
+#patientAddective nav ul li
+{
+    display:flex;
+    justify-content: space-between;
+}
+      //  end of styling of patienInf section childs **/
+
+
+/*
+
+
+   styling of drugs and it.s childs 
+.drugs 
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:5px;
+    flex-shrink: 1;
+    align-items:center;
+    align-content: center;
+}
+
+.drugs div
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-column-align: start;
+}
+
+**/
+  /** end of styling of drugs and it.s childs **/
+
+ 
+ /** styling of signature section **/
+ /**
+.signature
+{
+    justify-content: center;
+
+}
+/** end of styling signature section*/
+
+#rigesterButton
+{
+    margin-left:50%;
+    margin-top:20px;
+    padding:10px;
+    font-weight: bold;
+    transition: ease-out 0.4s;
+    font-size: large;
+}
+#rigesterButton:hover
+{
+    box-shadow:inset 100px 0 0 0 red;
+    background-color: red;
+    color:white;
+    cursor:pointer;
+}
+
+
+/* end of styling persecreption form*/
+
+
+
+@media screen and (max-width: 600px) {
+    header nav{
+        width:100%;
+        align-items: stretch;
+    }
+    .handlinPerscreption{
+        width:100%;
+    }
+    /*
+    .patientInfo,.examinations
+    {
+        align-items: stretch;
+        gap:0px;
+        justify-content: space-around;
+    }
+    */
+    /*
+    .examinations div
+    {
+        display:flex;
+        justify-content:space-evenly;
+        gap:5px;
+    }
+    .handlinPerscreption section label
+    {
+        font-weight: bold;
+        font-size:12px
+    }
+    */
+    .handlinPerscreption input,textarea
+    {
+        font-size: medium;
+        font-weight: 100;
+    }
+    /*
+    .handlinPerscreption input[type="number"]
+    {
+      width:40px;
+      min-width:30px;
+    }
+    */
+    .exit{
+        margin-left: 40%;
+    }
+
+    
+}
+/*
+@media screen and (max-width: 350px) {
+    /*
+    .examinations div
+    {
+        flex-direction: row;
+        flex-grow: 0.25;
+        justify-content:space-evenly;
+        align-items:stretch;
+        gap:0px;
+        width:40%;
+    }
+    .examinations
+    {
+        justify-content: flex-start;
+        gap:0px;
+
+    }
+    
+
+
+}
+*/
+
+
+@media screen and (max-width:1100px) {
+    .handlinPerscreption{
+        width:70%;
+        margin-left:10%
+    }
+    .exit{
+        left:83%
+    }
+/*
+    .patientInfo,.examinations
+    {
+        gap:10px
+
+    }
+    */
+    header nav
+    {
+        width:80%
+    }
+
+    
+}
+@media screen and (max-width: 850px) {
+    .handlinPerscreption{
+        width:70%;
+    }
+    .exit{
+        left:35%;
+    }
+    /*
+    .patientInfo,.examinations
+    {
+        flex-wrap: wrap;
+
+    }
+    */
+    header nav{
+        
+        align-items: center;
+    }
+
+    header nav button{
+    
+    font-weight: normal;
+    background-color:rgb(66, 182, 178);
+    color: white;
+    font-size:small;
+    padding: 5px 5px;
+
+}
+   
+
+
+
+}
+
+/*
+@media screen and (min-width: 700px) {
+
+    /*
+    .patientInfo div
+    {
+        display:flex;
+        flex-wrap: nowrap;
+        flex-shrink: 1;
+        flex-grow: 0;
+        justify-content: space-around;
+        
+    }
+
+ 
+
+}
+*/
+

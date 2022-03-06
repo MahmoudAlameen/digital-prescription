@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf8">
+        <title> main page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" href="css/persecreption_from.css" type="text/css">
+        <link rel="stylesheet" href="css/persecreptView.css" type="text/css">
+
+    </head>
+    <body>
+
+        <!-- main contain 4 elements overlay_section: for overlaying , img : for bakcground , icons_section , persecrepts_sections :hidden , 
+            regesterForm_section :hidden 
+             -->
+        <main>
+            <header id="headMain">
+                 <h1 id="user"></h1>
+                 <form id="logoutForm">
+                 <button id="logout">logout</button>
+             </form>
+
+            </header>
+
+            <!----->
+            <section class="overlay"> </section>
+
+            <!--<img  src ="backgrounds/main.jpg" class="overlayImage">-->
+            <section id="icons" class="icons">
+                <a id="registerIcon"><p>Register prescription</p></a>
+                <a id="persecreptIcon" ><p>prescription</p></a>
+            </section>
+            <section id="persecreptsSec">
+                <ul id="persecreptsList">
+                <!--
+                    
+                <li>Persecrept1</li>
+                <li>Persecrept2</li>
+                <li>Persecrept3</li>
+                <li><a id="exitList">Exit</a></li>
+                -->
+                
+            </ul>
+            <a class="back">Back</a>
+            </section>
+
+            <!-- start of register persecreption form section -->
+            <section id="registerSec" class="registerSec">
+                <header id="regHead">
+                    <button class="back"> Back</button>
+                    <button class="formbutton" data-formtype="form2">form1</button>
+                 <!--   <button class="formbutton" data-formtype="form2">form2</button>-->
+                    <input type="file" class="formbutton" id="uploadImageButon" data-formtype="form3" value="upload image"> 
+                </header>
+                <form id="registeringForm" class="handlinPerscreption">
+
+                    <section id="diagnosis" class="diagnosis">
+                        <textarea id="diagnosisArea" name="Diagnosis" placeholder="doctor diagnosis"></textarea>
+    
+                    </section>
+                    <button  id="rigesterButton" data-formType="form2" >Register</button>
+                </form>
+
+            </section>
+            <section id="persecreptViewSec">
+                <header>
+                    <button  class="back"> Back</button>
+                  </header>
+                <section id="persecreptView" class="handlinPerscreption" data-formType="form1"></section>           
+             </section>
+
+        </main>
+        <footer id="imgContainer">
+            <img id="imgBackground" src="http://localhost:2000/img" />
+        </footer>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>`

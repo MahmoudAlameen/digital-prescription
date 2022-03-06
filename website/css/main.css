@@ -1,0 +1,239 @@
+
+@media screen  and (max-width:850px) {
+    .icons
+    {
+        margin-top:0px;
+    }
+    .icons a
+    {
+        margin-top:20%;
+        font-size: 15px;
+          padding:5px 5px;
+          font-weight:bold;
+    }
+    .icons a p
+    {
+        transform: scale(1,1.5);
+    }
+
+
+
+}
+@media screen and (max-width:400px) {
+    .icons a p
+    {
+        
+    font-size: 12px;
+
+    }
+
+    
+
+}
+#headMain
+{
+    position: fixed;
+    z-index:10;
+    top:-10px;
+    right:0px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    width:100%;
+    height: 50px;
+    background-color: rgb(5, 6, 39);
+}
+#logout
+{
+    font-size: large;
+    font-weight: bold;
+    background-color: rgb(185, 187, 218);
+}
+#logout:hover
+{
+    cursor: pointer;
+    background-color:rgb(65, 66, 95);
+    color:white;
+}
+#user
+{
+    color:white;
+}
+
+
+
+main
+{
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:20px
+
+}
+/** styling of overlay section and  background img  element**/
+/**
+.overlay , .overlayImage
+{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+}
+**/
+
+/**
+.overlay
+{
+   z-index:2;
+   background: linear-gradient(0deg, rgb(134, 167, 134) 0%, rgba(0,13,60,1) 100%);    
+   color:whitesmoke;
+  opacity: 0.7;
+}
+**/
+/** end of styling overlay and background img element */
+
+
+/* styling of Icons section*/
+.icons
+{
+    position: relative;
+    display:flex;
+    justify-content:space-around;
+    width:100%;
+    z-index:3;
+    margin-top: 10%;
+}
+.icons a
+{
+    padding:10px 10px;
+    font-weight:bolder;
+    background-color: whitesmoke;
+    color:rgb(78, 70, 110);
+    font-size:20px;
+    text-decoration: none;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    border-radius: 20%;
+    
+}
+.icons a  p
+{
+    transform: scale(1,1.5);
+
+}
+
+.icons a:hover
+{
+    cursor: pointer;
+    background-color:rgb(5, 6, 39);
+    color:white;
+    transition: ease-out 0.4s;
+    box-shadow:inset 200px 0 0 0 rgb(5, 6, 39);;
+
+
+
+}
+
+/** end of styling icons section**/
+/***styling of image container**/
+#imgContainer
+{
+    z-index:3;
+    height: 300px;
+    margin-left: -5px;
+    bottom:-25px;
+    margin-top: 20px;   
+}
+#imgContainer img
+{
+ width:100%;
+ height: 110%;
+
+}
+
+
+/** styling od persecreptions list section  **/
+#persecreptsSec
+{
+    gap:0px;
+    display:none;
+    position: relative;
+    z-index:2;
+    width:100%;
+    height: 100%;
+}
+#persecreptsList
+{
+    min-height:100px;
+    max-height:400px;
+    background-color: rgb(20, 10, 48);
+    color:white;
+    font-size: 20px;
+    overflow:auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    width:fit-content;
+    position:relative;
+    margin-bottom: 0px;
+}
+#persecreptsList li
+{
+    list-style-type: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display:flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    gap:20px
+}
+
+.back, #remove
+{
+    padding: 10px 10px;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 10%;
+    text-align: center;
+    background-color: rgb(18, 23, 66);
+
+    width:100px;
+    transition: ease-out 0.4s;
+    margin-top:10px;
+    color:rgb(240, 243, 255)
+   
+}
+.back:hover , .formbutton:hover , #remove:hover
+{
+    color:white;
+    cursor: pointer;
+    box-shadow:inset 200px 0 0 0 rgb(63, 67, 102)
+
+}
+#remove
+{
+    background-color: rgb(63, 67, 102);
+
+}
+#remove:hover
+{
+    box-shadow:inset 200px 0 0 0 rgb(10, 3, 46);
+
+}
+
+#persecreptsList li:hover
+{
+    background-color: rgb(111, 204, 157);
+    cursor: pointer;
+    border-radius: 10%;
+    color:black
+}
+
+/** end pf  persecreptions list section **/
+

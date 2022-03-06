@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf8">
+        <title>login page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/login.css">
+    </head>
+    <body>
+        <section id="overlay"></section>
+        <section id="AdminModeSec">
+            <form>
+                <section>
+                    <label>Enter Id </label>
+                    <input id="adminId" type="password" placeholder="Enter Authentication ID" >
+                </section>
+                <section>
+                    <label>Enter Password</label>
+                    <input  id="passwordId" type="password" placeholder="Enter Authentication Password">
+                </section>
+                <section>
+                    <input id="submitId" type="submit" value="Authentication">
+                    <button id="exitAuthentication">Exit</button>
+                </section>
+            </form>
+        </section>
+        <header>
+            <h1>DIGITAL   PRESCREIPTION</h1>
+        </header>
+        <main>
+            <h2>Login</h2>
+            <button id="adminButton">switch Admin mode</button>
+            <form id="login" >
+
+                <section>
+                    <label>User Name</label>
+                    <input id="user" type="text" placeholder="Enter user name">
+                </section>
+
+                <section>
+                    <label>Password</label>
+                    <input id="pass" type="password" placeholder="Enter password">
+                </section>
+                <input id="submmitLogin" type="submit" value="Login">
+
+            </form>
+            <h2>create Acount</h2>
+            <form id="createAcount" >
+                <section>
+                    <label>first name</label>
+                    <input type="text" placeholder="first name">
+                </section>
+                <section>
+                    <label>last name</label>
+                    <input type="text" placeholder="last name">
+                </section>
+                <section>
+                    <label>user name</label>
+                    <input type="text">
+                </section>
+                <section>
+                    <label>email</label>
+                    <input type="text" placeholder="Enter your email">  
+                </section>
+                <section>
+                    <label>passsword</label>
+                    <input type="password" placeholder="select strong password"> 
+                </section>
+                <input id="submmitAcount" type="submit" value="Create Acount">
+            </form>
+
+            </script>
+
+        </main>
+        <script src="js/login.js"></script>
+
+    </body>
+</html> 

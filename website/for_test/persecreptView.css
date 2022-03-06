@@ -1,0 +1,66 @@
+#persecreptViewSec
+{
+    display:none;
+    
+
+}
+#persecreptView
+{
+    width:60%;
+    margin:auto;
+    margin-top:75px;
+    margin-bottom: 20px;
+    background: rgb(136,203,171);
+    background: linear-gradient(0deg, rgb(105, 86, 117) 0%, rgba(0,13,60,1) 100%);    color:whitesmoke;
+    padding-bottom: 20px;
+    color:whitesmoke 
+
+}
+
+.patientName strong
+{
+    word-break:keep-all
+}
+.patientName strong
+{
+}
+#persecreptView strong
+{
+    color:rgb(209, 168, 168);
+    font-size: large;
+
+}
+#pv_patientAddective
+{
+    display:flex;
+    flex-direction: row;
+    gap:5px;
+    flex-basis: 70%;
+}
+#pv_patientAddective ul
+{
+    margin:0 0;
+    list-style-type: none;
+    color:rgb(209, 168, 168);
+    padding:0 0;
+}
+
+@media screen and (max-width:600px){
+
+    .patientName
+    {
+        flex-basis: 100%;
+    }
+    .patientAge
+    {
+        flex-basis: 20%;
+    }
+  
+    #pv_patientAddective
+    {
+        display:flex;
+        flex-direction: row;
+        gap:5px;
+        flex-basis: 70%;
+    }
+}
